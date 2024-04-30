@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Kilmore Test</title>
+    <title>Remote Slides</title>
 </head>
-<body bgcolor="#000000">
+<body>
     <iframe id="slidesFrame" frameborder="0" width="100%" height="100%" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
     
     <script>
-        // Function to update the Google Slides URL
+        // Function to fetch and update the slides URL
         function updateSlidesURL() {
-            var slidesURL = "https://docs.google.com/presentation/d/e/2PACX-1vRW4YgmNvxwa22hEeQ-uOaQ_FW6Gv5zWUmEq2S6BmAw1ZNIAnm92Pl2kStD5YSqk2uGMkh-nnnTTEJK/embed?start=true&loop=true&delayms=7000&rm=minimal";
+            // Use the URL of your Google Slides presentation
+            var slidesURL = "https://docs.google.com/presentation/d/1V_8fKIVxaIkHgtMtyvv4DpOPl6F0n3lm1MQtvqEEeE0/edit?usp=sharing";
             document.getElementById("slidesFrame").src = slidesURL;
         }
 
@@ -17,7 +18,7 @@
         updateSlidesURL();
 
         // Optionally, you can set a timer to periodically update the slides URL
-        // setInterval(updateSlidesURL, 300000); // 300000 milliseconds = 5 minutes
+        setInterval(updateSlidesURL, 300000); // 300000 milliseconds = 5 minutes
     </script>
 </body>
 </html>
