@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kilmore Test</title>
+</head>
+<body bgcolor="#000000">
+    <iframe id="slidesFrame" frameborder="0" width="100%" height="100%" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    
+    <script>
+        // Function to update the Google Slides URL
+        function updateSlidesURL() {
+            var slidesURL = "https://docs.google.com/presentation/d/e/2PACX-1vRW4YgmNvxwa22hEeQ-uOaQ_FW6Gv5zWUmEq2S6BmAw1ZNIAnm92Pl2kStD5YSqk2uGMkh-nnnTTEJK/embed?start=true&loop=true&delayms=7000&rm=minimal";
+            document.getElementById("slidesFrame").src = slidesURL;
+        }
+
+        // Call the function initially
+        updateSlidesURL();
+
+        // Optionally, you can set a timer to periodically update the slides URL
+        // setInterval(updateSlidesURL, 300000); // 300000 milliseconds = 5 minutes
+    </script>
+</body>
+</html>
